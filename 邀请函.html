@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML5邀请函练习</title>
+    <style type="text/css">
+        html,body   {
+            height: 100%;
+            color: #ffffff;
+            font-family: sans-serif;
+        }
+        body    {
+            background: url(img/image.jpg) center center;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        #container  {
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            top:50%;
+            transform: translateY(-50%);
+         }
+        #container h1   {
+            font-size: 54px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+         }
+        #container p  {
+             font-size: 21px;
+             margin-bottom: 40px;
+         }
+         a      {
+             font-size:18px;
+             color: #ffffff;
+             border: 1px solid #ffffff;
+             border-radius: 3px;
+             padding:10px 100px;
+             text-decoration:none;
+         }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Let's Learn HTML5</h1>
+        <p>发挥你的美感与想象力，探索web开发的无限可能性，现诚邀您一同踏上HTML5的学习之路。</p>
+        <a href="invite.php" id="enroll">邀您参加</a>
+    </div>
+    <script type="text/javascript">
+        var enroll =document.getElementById("enroll");
+        enroll.onclick = function(e){
+        e.preventDefault();
+        enroll.innerHTML= "报名成功";
+        enroll.style.background = "#27cb8b";
+        enroll.style.borderColor = "#27cb8b";
+        }
+        </script>
+</body>
+</html>
