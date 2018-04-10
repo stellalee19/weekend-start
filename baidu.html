@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8">
+        <title>百度一下，你就知道</title>
+        <style>
+        .nav {
+            float: right;/*右浮动*/
+            list-style: none;/*列表样式无*/
+            font-weight: bold;/*加粗*/
+            font-size: 13px;
+        }
+
+        .nav li {
+            display: inline-block;/*行内块元素*/
+            margin-left: 10px;
+        }
+
+        .nav a:link, .nav a:visited {
+            color: rgb(8, 8, 8);/*未点击和点击过后的颜色*/
+        }
+
+        .nav a:hover, .nav a:active {
+            color:rgb(6, 6, 245);/*点击和鼠标放置时的颜色*/
+        }
+
+        img.logo {
+            display: block;/*块元素*/
+            width: 300px;
+            margin-left:auto;
+            margin-right: auto;
+            clear: right;/*元素右侧不允许浮动元素*/
+        }
+
+        .search {
+            text-align: center;/*规定文本的对齐方式*/
+        }
+
+        .search-word {
+            width: 500px;/*文本框的宽度长度*/
+            height: 30px;
+        }
+
+        .search-button {
+            width: 100px;
+            height: 36px;
+            margin-left: -6px;
+            vertical-align: bottom;/*把元素的顶端与行中最低的元素的顶端对齐*/
+
+            background-color: rgb(98, 98, 250);/*背景色*/
+            color: #fff;/*字体颜色*/
+            border: 0;/*无边框*/
+        }
+
+        .search-button:hover {
+            background-color: rgb(21, 21, 156);
+        }
+
+        .footer {
+            display:block;
+            text-align: center;
+            font-size: 13px;
+            position: absolute;
+            bottom: 5%;
+            left: 33%;
+        }
+
+        .mav {
+            list-style: none;
+            
+        }
+
+        .mav li {
+            display:inline-block;
+            margin-left: 25px;
+            color: dimgrey;
+        }
+
+        .site-name {
+            font-size: 13px;
+            font-weight: bold;
+        }
+        
+        .footer a:link {
+            color: dimgrey;
+        }
+
+        </style>
+    </head>
+    <body>
+        <ul class="nav">
+            <li><a href="//news.baidu.com">新闻</a></il>
+            <li><a href="//hao123.com">hao123</a></il>
+            <li><a href="//map.baidu.com">地图</a></il>
+            <li><a href="//v.baidu.com">视频</a></il>
+            <li><a href="//tieba.baidu.com">贴吧</a></il>
+            <li><a href="//xueshu.baidu.com">学术</a></il>
+            <li><a href="//passport.baidu.com">登录</a></il>
+            <li><a href="//settings.html">设置</a></il>
+        </ul>
+        <img class="logo" alt="logo" src="img/baidu.gif">
+        <div class="search">
+            <input class="search-word" type="text" value="" name="keyword">
+            <span class="search-camera"></span><!--添加行内元素小相机-->
+            <input class="search-button" type="button" value="百度一下" name="button">
+        </div>
+        <div class="footer">
+            <img src="img/2wm.png" alt="2wm">
+            <p class="site-name">百度</p>
+            <ul class="mav">
+                <li><a href="#">把百度设为主页</a></li>
+                <li><a href="#">关于百度</a></li>
+                <li><a href="#">About Baidu</a></li>
+                <li><a href="#">百度推广</a></li>
+            </ul>
+            <p>
+                &copy;2018 Baidu
+                <a href="#">使用百度前必读</a>
+                <a href="#">意见反馈</a>
+                京ICP证030173
+                <span class="icp"></span>
+                <a href="#">京公网安备11000002000001号</a>
+                <span class="police"></span>
+            </p>
+        </div>
+    </body>
+</html>
