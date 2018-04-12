@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人简历</title>
+    <style>
+    body {
+        background-color: rgb(252, 252, 252);
+        font-size: 15px;
+    }  
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .container {
+        width:90%;
+        min-width: 600px;
+        max-width: 1080px;
+        margin: 0 auto;
+        overflow: hidden;/*隐藏超出区块的部分*/
+        position: relative;/*设置相对定位*/
+    }
+
+    .aside {
+        box-sizing: border-box;/*宽高属性计入内边距以及边框*/
+        width: 30%;
+        background-color: rgb(48, 46, 46);
+        color: aliceblue;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+    }
+
+    .main {
+        width: 70%;
+        margin-left: 31%;
+    }
+
+    .aside .header {
+        background-color: black;
+    }
+
+    .aside .header h1 {
+        height: 100px;
+        text-align: center;/*文字居中*/
+        margin: 0;
+    }
+
+    .aside .name {
+    background-color: rgb(34, 34, 34);
+    height: 200px;
+    text-align: center;
+    }
+
+    .aside .name img {
+        margin-top: 10px;
+        width: 150px;
+    }
+
+    .aside .article {
+        padding: 30px;
+    }
+
+    .aside .twm {
+        margin-top: 20px;
+    }
+
+    .main-header {
+        overflow: hidden;/*超出范围无滚动条*/
+    }
+
+    .main-header .left-header,
+    .main-header .right-header {
+        color: aliceblue;
+        float: left;
+        width: 49%;
+        height:230px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .main-header .left-header {
+        background-color: rgb(238, 12, 12);
+    }
+
+    .main-header .right-header {
+        background-color: chartreuse;
+        margin-left: 2%;
+    } 
+
+    .main .left-header,
+    .main .right-header,
+    .main .experience,
+    .main .edu,
+    .main .honor {
+        position: relative;/*设置相对定位*/
+    }
+
+    .main .left-header *,
+    .main .right-heade *,
+    .main .experience *,
+    .main .edu *,
+    .main .honor * {
+        position: relative;
+    }
+
+    .main .logo {
+        position: absolute;
+        width: 15%;
+        max-width: 80px;
+        top:20px;
+        right: 20px;
+    }
+
+    .main .experience,
+    .main .edu {
+        margin: 20px;
+        box-sizing: border-box;
+        padding: 20px;
+        background-color: beige;
+        overflow: hidden;
+    }
+
+    .main .experience .title,
+    .main .edu .title {
+        width: 30%;
+        float: left;
+    }
+
+    .main .experience .title p,
+    .main .edu .title p {
+        color: #666;
+    }
+
+    .main .experience .detail,
+    .main .edu .detail {
+        width:70%;
+        float: left;
+    }
+
+    .main .experience .detail p,
+    .main .edu .detail p {
+        color: #666;
+    }
+    .main .honor {
+        background-color: #398FCC;
+        color: #fff;
+        margin: 20px 0 0 0;
+        padding: 20px;
+        overflow: hidden;
+    }
+
+    .main .honor ul {
+        box-sizing: border-box;
+        width: 50%;
+        float: left;
+        padding-left: 50px;
+        list-style: disc;/*列表前标记默认为实心圆*/
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="aside">
+            <div class="header">
+                <h1>个人简历</h1>
+            </div>
+            <div class="name">
+                <img src="img/timg.jpg" alt="camera">
+                <h3>奥利弗·奎因</h3>
+            </div>
+            <div class="article">
+                <h2>自我介绍</h2>
+                <p>白天是知名企业家罗伯特·奎因之子，奎因联合公司总裁，星城市长。夜晚则化身维护正义的社会警察</p>
+                <p>拥有上亿身价的奥利弗·奎因遭遇翻船事故，被困在中国南海的一座小岛上，5年后被发现并救出时，他受到了家人和朋友的热烈欢迎，但他们并不知道，眼前的奥利弗·奎因已不再是曾经的那个纨绔子弟。</p>
+            </div>
+            <img src="img/2wm.png" class="twm" alt="2wm">
+            <ul class="contact">
+                <li><i>手机：18953553088</i></li>
+                <li><i>邮箱：asdnh@163.com</i></li>
+                <li><i>QQ:51981564</i></li>
+            </ul>
+        </div><!--aside over-->
+        <div class="main">
+            <div class="main-header">
+                <div class="left-header">
+                    <img src="img/arrow.jpg" class="logo">
+                    <h2>基本资料</h2>
+                    <ul>
+                        <li>出生年月： 1986.8.6</li>
+                        <li>国籍： 美国</li>
+                        <li>出生地： star city</li>
+                        <li>别名： 绿箭</li>
+                        <li>职业： super hero</li>
+                    </ul>
+                </div>
+                <div class="right-header">
+                    <h2>联系方式</h2>
+                    <img src="img/baidu.gif" class="logo">
+                    <ul>
+                        <li>联系电话： 123456789</li>
+                        <li>邮箱： arrow@yahoo.com</li>
+                        <li>QQ: 1346790</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience">
+                 <img src="img/log.jpg" class="logo">
+                 <h2>个人经历</h2>
+                 <div class="item">
+                     <div class="title">
+                        <h3>星城市长</h3>
+                        <p>1999-2006</p>
+                    </div>
+                    <div class="detail">
+                        <h3>白天</h3>
+                        <p>白天的时候是星城的市长，著名企业家奥利弗奎因。接受媒体采访，通过政治和行政手段维护着星城的和平繁荣。</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="title">
+                        <h3>绿箭</h3>
+                        <p>1995-2011</p>
+                    </div>
+                    <div class="detail">
+                        <h3>夜晚</h3>
+                        <p>夜晚化身治安维持者，凭借高超的箭术和格斗技巧，使用暴力手段打击星城犯罪势力</p>
+                    </div>
+                </div>
+            </div>
+            <div class="edu">
+                <img src="img/image.jpg" class="logo">
+                <h2>教育经历</h2>
+                <div class="item">
+                    <div class="title">
+                        <h3>小组长</h3>
+                        <p>1990-1995</p>
+                    </div>
+                    <div class="detail">
+                        <h3>小红花幼儿园</h3>
+                        <p>被评为优秀小组长，省级优秀儿童，在校期间获得了剪纸小能手，唱歌小明星等等诸多殊荣</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="title">
+                        <h3>五道杠</h3>
+                        <p>1995-1997</p>
+                    </div>
+                    <div class="detail">
+                        <h3>希望小学</h3>
+                        <p>希望小学优秀毕业生，五道杠大队长，曾当选为省级优秀少先队员，优秀儿童</p>
+                    </div>
+                </div>
+            </div>
+            <div class="honor">
+                <img src="img/arrow.jpg" class="logo">
+                <h2>获奖经历</h2>
+                <ul>
+                    <li>2010 年 优秀学生会干部</li>
+                    <li>2011 年 国家科技进步奖</li>
+                    <li>2010 年 优秀学生会干部</li>
+                    <li>2011 年 国家科技进步奖</li>
+                </ul>
+                <ul>
+                    <li>2010 年 优秀学生会干部</li>
+                    <li>2011 年 国家科技进步奖</li>
+                    <li>2010 年 优秀学生会干部</li>
+                    <li>2011 年 国家科技进步奖</li>
+                </ul>               
+            </div>
+        </div><!--main over-->
+    </div><!--container over-->
+</body>
+</html>
