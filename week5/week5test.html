@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+
+    .consider {
+        margin: 0;
+        padding: 0;
+        width: 90%;
+        padding-right: 210px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .left {
+        width: 100%; 
+        background-color: chartreuse;
+        position: relative;
+    }
+
+    .right {
+        width:200px;
+        position: absolute;
+        background-color: blue;
+        right: 0;
+        top: 0;
+        
+    }
+
+    .list {
+        list-style: none;
+        background: darkorange;
+        position: relative;
+        display: block;
+        min-width: 1000px;
+        max-width: 2000px;
+    }
+
+    .list li {
+        display: inline-block;
+        padding: 20px;
+        margin-right: 100px;
+    }
+
+    .list li:hover {
+        background-color: greenyellow;
+        color: blue;
+    }
+    .list li:hover a {
+        background-color: greenyellow;
+        color: blue;
+    }
+
+    .list a:link {
+        color: brown;
+    }
+
+    .list a:hover {
+        color:steelblue;
+    }
+</style>
+<body>
+     <div class="list">
+        <ul>
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">主页</a></li>
+            <li><a href="#">文库</a></li>
+            <li><a href="#">图片</a></li>
+            <li><a href="#">音乐</a></li>
+        </ul>
+    </div>
+    <div class="consider">
+        <div class="left">
+            <p>sdmasdnjnasdlk</p>
+        </div>
+        <div class="right">
+            <p>asdm.aasdjk;hasdjn</p>
+        </div>
+    </div>
+</body>
+</html>
