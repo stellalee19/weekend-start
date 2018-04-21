@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>text</title>
+    <style>
+        ul{
+            margin: 0;
+            padding: 0;/*清空样式*/
+            list-style: none;/*去除ul的黑点*/
+        }
+
+        .menu {
+            background-color: coral;
+            height: 65px;/*设置主菜单的高度和背景颜色*/
+        }
+
+        .menu li {
+            display: block;/*将元素规定为块级元素*//*？？？？？*/
+            float: left;/*左浮动*/
+            position: relative;/*设置相对定位*/
+            border-right: 1px solid rgba(255,255,255,.3);/*给li添加边框*/
+        }
+
+        .menu li a {
+            display: block;/*将元素规定为块级元素，使区域可点击*/
+            line-height: 65px;/*定义每一行的高度为65px；*/
+        }
+
+        .menu li ul {
+            display: none;/*隐藏ul元素*/
+            position: absolute;/*相对于父元素进行绝对定位*/
+            top: 65px;/*？？？？？*/
+            background-color: palevioletred;
+        }
+
+        .menu li ul li {
+            width: 100%;/*继承父元素的width值*/
+            border-right: 0;/*？？？？*/
+            border-top: 1px solid rgba(255,255,255,.3);
+        }
+
+        .menu li ul li a {
+            font-size: 14px;
+            line-height: 50px;
+        }
+
+        .menu li:hover ul {
+            display: block;/*缺少则不能下拉*/
+        }
+        
+        .menu li:hover {
+            background: rgba(0,0,0,.2);
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="">主页</a></li>
+        <li><a href="">新闻</a>
+            <ul>
+                <li><a href="">体育</a></li>
+                <li><a href="">天气</a></li>
+                <li><a href="">金融</a></li>
+            </ul>
+        <li>
+        <li><a href="">产品</a>
+            <ul>
+                <li><a href="">机器</a></li>
+                <li><a href="">压缩机</a></li>
+                <li><a href="">车辆</a></li>
+                <li><a href="">建筑</a></li>
+            </ul>
+        </li>
+        <li><a href="">服务</a></li>
+        <li><a href="">联系我们</a></li>
+    </ul>
+</body>
+</html>
