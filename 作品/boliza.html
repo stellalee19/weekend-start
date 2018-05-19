@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="素材/logo/title.png" />
+    <title>《守望先锋》官方网站</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(素材/背景/背景图.jpg);
+            background-attachment: fixed;
+            background-size: 100%;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            text-decoration:none;
+        }
+
+        .nav {
+            z-index: 5;
+            background-color: rgba(70,75,94,98%);
+            height: 65px;
+        } 
+
+        .nav ul {
+            z-index: 5;
+        }
+
+        .nav li{
+            display: block;
+            float: left;
+            position: relative;
+            float: left;
+        }
+
+        .nav li a {
+            display:block;
+            line-height: 65px;
+            text-align: center;
+            width: 125px;
+            min-width: 125px;
+            color: rgb(225,226,230);
+        }
+        
+        .arrow {
+            top: 45%;
+            right: 20%;
+            position: absolute;
+        }
+
+        .l1 {
+            line-height: 65px;
+            width: 125px;
+            float: right;
+            text-align: center;
+            color: white;
+            background-color: rgb(248,158,53);
+        }
+
+        .l1:hover {
+            background-color: rgb(248, 165, 70);
+        }
+
+        .nav li ul {
+            display: none;
+            position: absolute;
+            top:65px;
+            background-color: rgba(70,75,94,95%);
+        }
+
+        .nav li ul li {
+            width: 100%;
+        }
+
+        .nav li ul li a {
+            font-size: 14px;
+            line-height: 50px;
+        }
+
+        .nav li:hover ul {
+            display: block;
+            background-color: rgba(69, 79, 99, 0.95);
+        }
+        
+        .nav .write:hover {
+            background-color:rgba(79, 86, 110, 0.95);
+        }
+
+        .OW {
+            position: relative;
+            width: 100%;
+            height: 700px;
+        }
+    
+        video{ 
+            position: absolute;
+            margin-top: -65px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -100;
+        }
+        
+        .OW .caption{
+            position: absolute;
+            top:50%;
+            left: 50%;
+            margin-top: -30vmin;
+            margin-left: -27vmin;
+            z-index: 20;
+        }
+
+        .OW .caption img {
+            margin-top: 30px;
+            margin-bottom: -40px;
+            min-width: 350px;
+            width: 50vmin;
+            margin-left: 2vmin;
+        }
+
+        .but1 {
+            display: block;
+            border:1px solid rgb(248,158,53);
+            border-radius: 3px;
+            background-color: rgb(248,158,53);
+            color: black;
+            width:162.18px;
+            height: 35.45px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            text-align: center;
+            line-height: 35.45px;
+            font-weight: bold;
+        }
+        
+        .but1:hover {
+            background-color: rgb(248, 165, 70);
+        }
+
+        .but2 {
+            display: block;
+            border:1px solid rgb(255,255,255);
+            border-radius: 3px;
+            background-color: rgb(255,255,255);
+            color: black;
+            width:162.18px;
+            height: 35.45px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            line-height: 35.45px;
+            font-weight: bold;
+        }
+
+        .but2:hover {
+            background-color: rgba(248, 165, 70,0);
+        }
+        
+        .top100 {
+            width: 150px;
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+        }
+        /***********************OW 结束***************************/
+
+        .press {
+            background-color: aliceblue;
+            position: relative;
+        }
+
+        .press h3 {
+            text-align: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            color: rgb(64,82,117);
+            font-size: 200%;
+            font-weight: lighter;
+            margin-top: -50px;
+            padding-top: 20px;
+        }
+        
+        .press img {
+            width: 600px;
+            display: inline-block;
+            margin: 10px;
+        }
+        
+        .press .imgtwo {
+            display: block;
+            text-align: center;
+        }
+
+        .press .but3{
+            display: block;
+            border:3px solid rgb(0,165,226);
+            border-radius: 3px;
+            color: rgb(0,165,226);
+            width: 259px;
+            height: 40.64px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            line-height: 40.64px;
+            font-size: 150%;
+            font-weight: bold;
+        }
+
+        .press .but3:hover {
+            background-color: rgb(12,189,255);
+            color: rgb(255, 255, 255);
+        }
+        
+        .kongbai1 {
+            height: 80px;
+        }
+        /*************press结束*********************/
+
+        .future {
+            background-image:url(素材/背景/大本钟.jpg);
+            background-size: 100%;
+        }
+        
+        .future h1 {
+            margin: 0;
+            font-size: 500%;
+            color: rgb(240,237,242);
+            font-weight: lighter;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .future p{
+            font-size: 150%;
+            color: rgb(240,237,242);
+            text-align: center;
+        }
+        
+        .future .but4 {
+            display: block;
+            color: white;
+            background-color: rgb(248,158,53);
+            width: 165px;
+            height: 45px;
+            border-radius: 3px;
+            line-height: 40px;
+            text-align: center;
+            font-size: 150%;
+            font-weight: bold;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+        }
+        
+        .future .but4:hover {
+            background-color: rgb(248, 165, 70);
+        }
+
+        .kongbai2 {
+            height: 80px;
+        }
+
+        /**********future结束***************/
+
+        .hero {
+            background-image: url(素材/背景/白色2.jpg),
+            url(素材/背景/白光.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        .hero h1 {
+                font-size: 500%;
+                font-weight: lighter;
+                color: rgb(58,87,126);
+                text-align: center;
+                padding: 50px;
+                margin: 0;
+        }
+
+        .hero p {
+            color: rgb(58,87,126);
+            text-align: center;
+            font-size: 150%;
+            line-height: 40px;
+        }
+        
+        .hero .every {
+            display: block;
+            margin: 0 20px;
+            height: 230px;
+            margin-top: 180px;
+            background: rgb(85,92,113);
+        }
+        /******************************************************/
+        .hero ul li{
+            display: none;
+        }
+
+        .icon ul li {
+            display: inline-block;
+        }
+
+        .icon ul li:hover .hero ul li{
+            display: block;
+        }
+
+        /*******************************************************/
+        .world {
+            position: relative;
+            background-image: url(素材/背景/白色.jpg);
+            background-size: 100%;
+            height: 680px;
+        }
+        
+        .world .but5 {
+            display: block;
+            color: white;
+            background-color: rgb(248,158,53);
+            width: 165px;
+            height: 45px;
+            border-radius: 3px;
+            line-height: 40px;
+            text-align: center;
+            font-weight: bold;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            font-size: 50%;
+        }
+        
+        .world .but5:hover {
+            background-color: rgb(248, 165, 70);
+        }
+
+        .world .Widowmaker {
+            position: absolute;
+            top: -120px;
+            width: 50%;
+        }
+
+        .world .writ {
+            text-align: center;
+            font-size: 250%;
+            position: absolute;
+            right: 300px;
+            color: rgb(58,87,126);
+        }
+
+        .world .writ h1 {
+            font-weight: normal;
+        }
+
+        /*******world结束***********/
+        .blank {
+            height: 360px;
+            background-color: rgba(0,0,0,0);
+        }
+
+        .footer {
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 200px;
+            z-index: 10;
+            background-color: rgb(32,32,32);
+        }
+        
+        .footer .three ul li{
+            display: inline-block;
+            height: 150px;
+            line-height: 150px;
+            margin-right: 20px;
+        }
+
+        .footer .three a {
+            display: block;
+            color: rgb(255, 255, 255);
+        }
+
+        .footer .state {
+            position: relative;
+            display: inline-block;
+            border-bottom: 2px solid rgb(65,65,65);
+            padding-bottom: 40px;
+        }     
+
+        .footer .company {
+            width: 400px;
+            float: left;
+        }
+        
+
+        .footer .joker a {
+            color: rgb(204,204,204);
+        }
+
+        .footer .joker {
+            float: right;
+            color: rgb(144,144,144);
+            font-size: 90%;
+            margin: -35px;
+            line-height: 23px;
+        }
+        
+        .joker ul {
+            list-style: none;
+        }
+
+        .joker ul li{
+            display: inline-block;
+            padding: 0 10px;
+            padding-bottom: 10px;
+            margin-left: -10px;
+        }
+        
+        .joker img {
+            display: inline-block;
+            margin: 2px;
+            margin-top: 3px;
+        }
+
+        .over {
+            position: relative;
+            display: block;
+            background-color: rgb(32,32,32);
+            padding-top: 20px;
+            padding-bottom: 100px;
+            z-index: 10;
+            text-align: center;
+        }
+
+        .over p {
+            margin: 0;
+            color: rgb(99,99,99);
+            font-size: 85%;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="header">
+        <ul class="nav">
+            <li><img src="素材/logo/守望先锋文字.png" alt="OW"></li>
+            <li class="write"><a href="">游戏<img class="arrow" src="素材/logo/下拉箭头.png" alt="arrow"></a>
+                <ul>
+                    <li><a href="">概述</a></li>
+                    <li><a href="">补丁</a></li>
+                </ul>
+            </li>
+            <li class="write"><a href="">英雄</a></li>
+            <li class="write"><a href="">活动<img class="arrow" src="素材/logo/下拉箭头.png" alt="arrow"></a>
+                <ul>
+                    <li><a href="">行动档案</a></li>
+                    <li><a href="">欢度新春</a></li>
+                    <li><a href="">雪国仙境</a></li>
+                    <li><a href="">万圣夜惊魂</a></li>
+                    <li><a href="">夏季运动会</a></li>
+                    <li><a href="">周年庆典</a></li>
+                    <li><a href="">国王行动</a></li>
+                </ul>
+            </li>
+            <li class="write"><a href="">视频图片</a></li>
+            <li class="write"><a href="">新闻</a></li>
+            <li class="write"><a href="">下载</a></li>
+            <li class="write"><a href="">生涯数据</a></li>
+            <li class="write"><a href="">电子竞技</a></li>
+            <li class="write"><a href="">论坛</a></li>
+            <a class="l1" href=""><b>购买</b></a>
+        </ul>
+    </div>
+    <!--header结束-->
+    <div class="OW">
+        <video autoplay loop >
+            <source src="http://overwatch.nos.netease.com/1/assets/img/pages/home/anniversary/header.mp4" type="video/mp4">
+        </video>
+        <div class="caption">
+            <img src="素材/logo/守望大logo.png" alt="守望先锋">
+            <div class="but">
+                <a class="but1" href="#">立即购买</a>
+                <a class="but2" href="#">游戏介绍</a>
+            </div>
+        </div>
+        <img class="top100" src="素材/图片/年度100.png">
+    </div>
+    <!--ow结束-->
+    <div class="press">
+        <h3><em>新闻公告</em></h3>
+        <div class="imgtwo">
+            <img src="素材/图片/粉红天使.jpg" alt="粉红天使">
+            <img src="素材/图片/98元.jpg" alt="五折优惠">
+        </div>
+        <a class="but3" href="#">查看所有新闻</a>
+        <div class="kongbai1"></div>
+    </div>
+    <!--press结束-->
+    <div class="future">
+        <h1><em>为未来而战</em></h1>
+        <p>
+                军人、科学家、冒险家、奇人异士。<br><br>
+
+                在人类陷入空前危机之时，来自全球各个国家的特种精英们，为了结束战争、重铸秩序而团结在了一起。他<br>们，就是<b>守望先锋</b>。<br><br>  
+                
+                英雄们最终结束了这场危机，人类文明在随后的数十年内和平共存并迎来了一个探索、革新和发现的新时<br>代。尽管如此，守望先锋在多年后逐渐被人们所遗忘，最终难逃被解散的命运。<br><br>  
+                
+                如今，世界各地争端再起，人们都翘首期待着新英雄的出现，或旧英雄的归来。<br><br>
+                
+                你愿意与我们共同抗争吗？<br>
+        </p>
+        <a class="but4" href="">探索游戏</a>
+        <div class="kongbai2"></div>
+    </div>
+    <!--future结束-->
+    <div class="hero">
+        <h1><em>各具特色的英雄</em></h1>
+        <p>
+                不论喜欢哪种游戏方式，你总能找到适合自己玩法的英雄。<br>
+                掌握他们独特的技能玩法，享受《守望先锋》的无穷乐趣！
+        </p>
+    <!--**************************************************-->
+        <div class="every">
+        <ul>
+            <li><img class="person" src="素材/英雄/末日铁拳.png"></li>
+            <li><img class="person" src="素材/英雄/源氏.png"></li>
+            <li><img class="person" src="素材/英雄/麦克雷.png"></li>
+        </ul>
+        </div>
+    </div>
+    <!--hero结束-->
+    <div class="icon">
+        <ul>
+            <li><a href=""><img class="person" src="素材/英雄头像/末日铁拳.png"></a></li>
+            <li><a href=""><img class="person" src="素材/英雄头像/源氏.png"></a></li>
+            <li><a href=""><img class="person" src="素材/英雄头像/麦克雷.png"></a></li>
+        </ul>
+    </div>
+    <!--icon结束-->
+    <!--**************************************************-->
+    <div class="blank"></div>
+    <div class="world">
+        <img class="Widowmaker" src="素材/图片/黑百合全身.png">
+        <div class="writ">
+            <h1><em>这个世界需要<br>英雄</em></h1>
+            <p>现在即是未来，你来吗？</p>
+            <a class="but5" href="">立即购买</a>
+        </div>
+    </div>
+    <!--world结束-->
+</div>
+<!--main结束-->
+<div class="footer">
+    <div class="three">
+        <ul>
+            <li><a href=""><span class="one"></span>在线客服</a></li>
+            <li><a href=""><span class="two"></span>反馈</a></li>
+            <li><a href=""><span class="three"></span>加入我们</a></li>
+        </ul>
+    </div>
+    <div class="state">   
+        <div class="company">
+            <img src="素材/logo/暴雪logo.png" alt="bolizha">
+            <img src="素材/logo/网易logo.png" alt="wangyi">
+        </div>
+        <div class="joker">
+            <ul>
+            <li><a href="">隐私</a></li>|
+            <li><a href="">法律条款</a></li>|
+            <li><a href="">API</a></li>
+            </ul>
+            ©2018 暴雪娱乐有限公司版权所有 由上海网之易网络科技发展有限公司运营 著作权侵权 | 新广出审[2016]378号<br>
+
+            文网游进字[2016]0025号 | 沪网文号〔2017〕9633-727号 | 增值电信业务经营许可证编号：沪B2－20080012<br>
+            
+            互联网违法和不良信息举报电话：0571-28090163 沪公网安备 31011502022167号 | 上海市网络游戏行业自律公约<br>
+            
+            <a href=""><img src="素材/小图标/1%2Fframe%2Fcprt%2Ficon20120516.png"></a>
+            <a href=""><img src="素材/小图标/1%2Fframe%2Fcprt%2Fpolice.png"></a>
+            <a href=""><img src="素材/小图标/1%2Fframe%2Fcprt%2Fsgs-icon.png"></a>
+            <a href=""><img src="素材/小图标/1%2Fframe%2Fcprt%2Fzx110.png"></a>
+            |  适龄提示：适合13岁及以上使用  家长监护工程><br>
+            </p>
+        </div>
+    </div> 
+</div>
+<!--foot结束-->
+<div class="over">
+    <p>积极健康的游戏心态是健康游戏的开端，本游戏故事情节设置紧凑，请您合理控制游戏时间，避免沉溺游戏影响生活，注意自我保护，防范网络陷阱。<br>
+            健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。
+    </p>
+</div>
+<!--over结束-->
+</body>
+</html>
